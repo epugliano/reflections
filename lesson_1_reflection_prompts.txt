@@ -1,0 +1,73 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Using "diff" allowed me to see ALL of the changes by section, which really 
+    streamlined the process of finding said changes.  At the same time, it didn't 
+    tell me EXACTLY what was wrong which allowed me to still hone my error/typo-finding 
+    skills, which I assume will be important as time goes on.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It would allow me to know my thought process as a file was being created.  At
+    any point, I could revisit an old file and say "wait, how did I come to that?" 
+    and view the editing history.  It can also let me see what made an older version
+    of a file pass correctly compared to a new version that may not.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: Allows me more flexibility in terms of saving and committing code, which 
+          could result in fewer commits (that aren't really necessary) to look
+          through.
+
+    Cons: Also opens the possibility of user error.  Perhaps my judgement is not
+          good when it comes to determining when to commit and I've committed too
+          little or too much.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    I would assume because of memory considerations.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log can be used to list all of the commits that have been made to a 
+    repository, displaying the date, author, and id number.  A description of
+    the changes by the author is optional but highly recommended.
+
+    git diff can be used to list all of the changes that were made through a 
+    certain commit.  By copying and pasting the id number of an older commit,
+    hitting 'space', and pasting the id number of a newer commit, the changes
+    are displayed.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    I feel as though I could just go back to a previous commit and bring up the
+    last time that my code worked and go from there.  I don't have to play around 
+    with the code itself to find the answer, which would likely destroy all of 
+    my previous progress.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Keeping track of code, everything from HTML to R, so that I can easily save
+    information to GitHub and access it when I need it.  In addition, I would
+    like to be able to access previous commits along the way.
+
+APPLICABLE GIT NOTES
+
+Git command review
+
+Compare two commits, printing each line that is present in one commit but not the other.
+"git diff" will do this. It takes two arguments - the two commit ids to compare. 
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+"git clone" will do this. It takes one argument - the url of the repository to copy. 
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+"git checkout" will do this. It takes one argument - the commit ID to restore. 
+
+Show the commits made in this repository, starting with the most recent.
+"git log" will do this. It doesn't take any arguments.
